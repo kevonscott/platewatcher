@@ -56,7 +56,7 @@ The directory name becomes the `event_id` and `event_timestamp` in the DB, so us
 ## Running
 
 ```bash
-.venv/bin/python platewatcher/main.py
+.venv/bin/platewatcher
 ```
 
 The process runs forever.
@@ -145,7 +145,7 @@ SELECT * FROM detections WHERE plate_text = 'ABC1234';
 
 ---
 
-## Run as a systemd service (recommended for Pi)
+## Run as a systemd service (recommended for Pi) [NOT YET TESTED AND VALIDATED]
 
 ```ini
 # /etc/systemd/system/platewatcher.service
